@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="266.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlAddPlane">
+   <children>
+      <Button layoutX="25.0" layoutY="222.0" mnemonicParsing="false" onAction="#AddNewPlane" style="-fx-background-color: #A62300;" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="nameOfPlane" layoutX="25.0" layoutY="106.0" promptText="Ex. Boing 737" />
+      <Label layoutX="24.0" layoutY="78.0" text="Enter name of plane">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="airReg" layoutX="25.0" layoutY="176.0" promptText="Ex. N9999" />
+      <Label layoutX="25.0" layoutY="149.0" text="Aircraft registration">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font></Label>
+      <AnchorPane prefHeight="69.0" prefWidth="257.0" style="-fx-background-color: #034769;">
+         <children>
+            <Label layoutX="48.0" layoutY="13.0" text="AIRPORT" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

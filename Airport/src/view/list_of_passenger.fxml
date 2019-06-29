@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListOfPassenger">
+    <children>
+        <AnchorPane prefHeight="68.0" prefWidth="876.0" style="-fx-background-color: #034769;">
+            <children>
+                <Label layoutX="357.0" layoutY="11.0" text="AIRPORT" textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS Bold" size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="22.0" layoutY="88.0" text="Fly">
+            <font>
+                <Font name="Trebuchet MS Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="gatePassenger" layoutX="22.0" layoutY="112.0" prefHeight="25.0" prefWidth="156.0" />
+        <TableView fx:id="tablePlane" layoutX="22.0" layoutY="148.0" prefHeight="345.0" prefWidth="824.0">
+            <columns>
+                <TableColumn fx:id="columnId" prefWidth="53.99998474121094" text="id" />
+                <TableColumn fx:id="columnGateName" prefWidth="139.0" text="first name" />
+            <TableColumn prefWidth="147.0" text="last name" />
+            <TableColumn prefWidth="128.0" text="passport ID" />
+            <TableColumn prefWidth="190.0" text="email" />
+            <TableColumn prefWidth="165.0" text="phone number" />
+            </columns>
+        </TableView>
+        <Button layoutX="209.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchPassenger" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #BF4E30;" text="Search" textFill="WHITE">
+            <font>
+                <Font name="Trebuchet MS Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="737.0" layoutY="507.0" mnemonicParsing="false" onAction="#applyGate" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #A62300;" text="Apply" textFill="WHITE">
+            <font>
+                <Font name="Trebuchet MS Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainMenu">
+<children>
+   <Pane prefHeight="310.0" prefWidth="333.0">
+      <children>
+            <AnchorPane prefHeight="74.0" prefWidth="333.0" style="-fx-background-color: #034769;">
+               <children>
+                  <Label layoutX="88.0" text="AIRPORT" textFill="WHITE">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="116.0" layoutY="48.0" text="Main menu" textFill="#c97360">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="65.0" layoutY="93.0" mnemonicParsing="false" onAction="#addData" prefHeight="33.0" prefWidth="204.0" style="-fx-background-color: #BF4E30;" text="Add data" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="65.0" layoutY="139.0" mnemonicParsing="false" onAction="#editBaggage" prefHeight="33.0" prefWidth="204.0" style="-fx-background-color: #BF4E30;" text="Edit baggage" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="18.0" />
+               </font>
+            </Button>
+      </children>
+   </Pane>
+</children>
+<columnConstraints>
+   <ColumnConstraints />
+</columnConstraints>
+<rowConstraints>
+   <RowConstraints />
+</rowConstraints>
+</GridPane>
